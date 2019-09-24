@@ -1,4 +1,5 @@
 package Part_1_1;
+
 import java.util.*;
 
 public class Part_1_1 {
@@ -15,7 +16,7 @@ public class Part_1_1 {
             Scanner thirdInput = getInput();
             Double secondDigit = thirdInput.nextDouble();
             printAnswer(firstDigit, secondDigit, mathOperation);
-            if (mathOperation.equals("+") ) {
+            if (mathOperation.equals("+")) {
                 System.out.println(getSumOfTwoNumbers(firstDigit, secondDigit));
             }
             if (mathOperation.equals("-")) {
@@ -36,7 +37,7 @@ public class Part_1_1 {
         return new Scanner(System.in);
     }
 
-    private static void printAnswer(Double firstNumber, Double secondNumber, String mathOperation){
+    private static void printAnswer(Double firstNumber, Double secondNumber, String mathOperation) {
         System.out.print("Ответ: " + firstNumber + mathOperation + secondNumber + " = ");
     }
 
